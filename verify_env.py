@@ -1,9 +1,11 @@
 """Day-0 smoke test. Run on both laptops; paste the output into data/recording_log.md."""
-import os, sys, time
+import os
+import sys
+import time
 
-import numpy as np
 import cv2
 import mediapipe as mp
+import numpy as np
 import torch
 
 print(f"python      {sys.version.split()[0]}")
