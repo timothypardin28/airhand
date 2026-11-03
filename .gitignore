@@ -221,4 +221,4 @@ __marimo__/
 
 # Macbook related
 .DS_Store
-requirements.txt
+mac_requirements.txt
