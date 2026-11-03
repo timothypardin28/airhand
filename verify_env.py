@@ -1,4 +1,3 @@
-"""Day-0 smoke test. Run on both laptops; paste the output into data/recording_log.md."""
 import os
 import sys
 import time
