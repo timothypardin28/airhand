@@ -12,7 +12,6 @@ from common import GESTURES, landmarks_to_features
 PERSON = "A"          # A = Pardin, B = Cornelius
 SESSION = "s01"       # s01, s02, ... one per sitting. NEVER reuse an id.
 CAMERA = 0            # 0 = built-in, 1 = external webcam
-# --------------------------------------------------------------------------
 
 TARGET = 150          # frames to capture per burst
 COUNTDOWN = 3.0       # seconds to get into position
@@ -68,7 +67,7 @@ while True:
         if res.multi_handedness:
             hand_label = res.multi_handedness[0].classification[0].label
 
-    # ---- state machine ----------------------------------------------------
+    # state machine
     if state == "countdown":
         left = COUNTDOWN - (time.time() - t_start)
         if left <= 0:
@@ -87,7 +86,7 @@ while True:
             fh.flush()
         label(frame, f"RECORDING {captured}/{TARGET}", 4, (0, 0, 255), 0.9)
 
-    # ---- HUD --------------------------------------------------------------
+    # HUD
     label(frame, f"{PERSON} / {SESSION} / {hand_label} hand", 0, (0, 200, 255))
     label(frame, f"selected: {GESTURES[selected]}  [{selected + 1}]", 1)
     label(frame, "  ".join(f"{i+1}:{g[:5]}={counts[g]}"
