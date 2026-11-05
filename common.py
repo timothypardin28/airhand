@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 import torch.nn as nn
 
 GESTURES = ["fist", "point", "peace", "thumbs_up", "thumbs_down", "idle"]
@@ -30,6 +31,14 @@ def landmarks_to_features(hand_landmarks):
     pts = pts / scale
     return pts.reshape(-1)                # (21, 3) -> (63,)
 
+def get_device():
+    """Return the best available device for PyTorch."""
+    if torch.cuda.is_available():
+        return "cuda"
+    elif torch.mps.is_available():
+        return "mps"
+    else:
+        return "cpu"
 
 class HandNet(nn.Module):
     """63 -> 128 -> 64 -> N. Three linear layers, two ReLUs. 16,838 params at N=6."""
