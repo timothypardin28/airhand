@@ -1,0 +1,86 @@
+{
+  "n_total": 1800,
+  "class_counts": {
+    "fist": 300,
+    "point": 300,
+    "peace": 300,
+    "thumbs_up": 300,
+    "thumbs_down": 300,
+    "idle": 300
+  },
+  "sessions": {
+    "s01": 900,
+    "s02": 900
+  },
+  "random_split": {
+    "acc": 0.9916666746139526,
+    "n_test": 360,
+    "train_seconds": 0.8
+  },
+  "session_split": {
+    "held_out": "s02",
+    "acc": 0.8500000238418579,
+    "macro_f1": 0.849828029029307,
+    "n_train": 900,
+    "n_test": 900,
+    "train_seconds": 0.49,
+    "confusion": [
+      [
+        138,
+        12,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        121,
+        16,
+        13,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        118,
+        0,
+        4,
+        8
+      ],
+      [
+        0,
+        0,
+        0,
+        150,
+        0,
+        0
+      ],
+      [
+        14,
+        26,
+        0,
+        0,
+        110,
+        0
+      ],
+      [
+        0,
+        6,
+        16,
+        0,
+        0,
+        128
+      ]
+    ],
+    "labels": [
+      "fist",
+      "point",
+      "peace",
+      "thumbs_up",
+      "thumbs_down",
+      "idle"
+    ]
+  }
+}

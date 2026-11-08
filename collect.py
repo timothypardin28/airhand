@@ -9,9 +9,9 @@ import numpy as np
 from common import GESTURES, landmarks_to_features
 
 # edit these three before each recording session
-PERSON = "A"          # A = Pardin, B = Cornelius, C = Andrew
-SESSION = "s01"       # s01, s02, ... one per sitting. NEVER reuse an id.
-CAMERA = 1            # 0 = built-in, 1 = external webcam
+PERSON = "B"          # A = Pardin, B = Cornelius, C = Andrew
+SESSION = "s02"       # s01, s02, ... one per sitting. NEVER reuse an id.
+CAMERA = 0            # 0 = built-in, 1 = external webcam
 
 TARGET = 150          # frames to capture per burst
 COUNTDOWN = 3.0       # seconds to get into position

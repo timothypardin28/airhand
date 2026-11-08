@@ -1,0 +1,30 @@
+{
+  "held_out": "s02",
+  "n_test": 900,
+  "rows": [
+    {
+      "model": "Finger-count rule (no ML)",
+      "acc": 0.76,
+      "macro_f1": 0.7144663602615117,
+      "train_seconds": 0.0
+    },
+    {
+      "model": "Logistic regression",
+      "acc": 0.7533333333333333,
+      "macro_f1": 0.7599847146390996,
+      "train_seconds": 0.044207096099853516
+    },
+    {
+      "model": "kNN (k=5)",
+      "acc": 0.8544444444444445,
+      "macro_f1": 0.8554138209020515,
+      "train_seconds": 0.0009970664978027344
+    },
+    {
+      "model": "MLP 63-128-64-6",
+      "acc": 0.8500000238418579,
+      "macro_f1": 0.849828029029307,
+      "train_seconds": 0.49
+    }
+  ]
+}
