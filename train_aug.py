@@ -133,7 +133,7 @@ names = sorted(sessions)
 if len(names) < 2:
     raise SystemExit("need at least 2 sessions")
 
-test_name = names[-1]
+test_name = "s02"
 X_te, y_te, _ = sessions[test_name]
 X_tr = np.concatenate([sessions[n][0] for n in names[:-1]])
 y_tr = np.concatenate([sessions[n][1] for n in names[:-1]])
